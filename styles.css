@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: playfair-display, serif;
+    font-weight: 7000;
+    font-style: normal;
+}
+.header{
+    position: relative;
+    font-family: playfair-display;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;  
+    background-color: rgb(238, 228, 138);
+    border: 10px solid black;
+    border-radius: 50px;
+}
+.header #text{
+    position: absolute;
+}
+
+hr{
+    border: 1px solid rgb(55, 153, 214);
+}
+
+body{
+    padding: 30px;
+    margin: auto;
+    background-image: url(images/background.jfif);
+    height: 800px;
+}
+.main{
+    margin: 100px;
+    margin-top: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    font-family: Montserrat; 
+    background-image: linear-gradient(ff6cab, 7366ff);
+    padding-bottom: 20px;
+}
+
+.container{
+    padding: auto;
+    margin: auto;
+    padding: 50px;
+    padding-bottom: 20px;
+    font-size: 25px;  
+    background-color: wheat;
+    border: 10px solid black;
+    border-radius: 50px;
+    line-height:2em;
+}
+
+#message{
+    position: relative;
+    width: fit-content;  
+}
+#submit{
+    border-radius: 50%; 
+    border: 5px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+

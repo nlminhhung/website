@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cake.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xqs7wuw.css">
+    
+</head>
+<body>
+    <div class="header">
+        <div class="text">
+            <h1 style="text-align: center">About me</h1>
+        <p style="line-height:2em; font-size: 25px;">My name is <b>Minh Hung.</b> I was born in HCMC.<br>
+        I am a Sophomore at <b>Open University.</b> I want to have good marks this year. <br>
+        My website helps people to have a <b>memorable birthday party</b>.
+        </p>
+        </div>
+        
+        <div id="cake">
+            <div id="layer1"></div>
+            <div id="layer2"></div>
+            <div id="layer3"></div>
+            <div id="layer4"></div>
+            <div id="candle1"></div>
+            <div id="candle2"></div>
+            <div id="candle3"></div>
+            <div id="candle4"></div>
+        </div>
+
+    </div>
+    <div class="main">
+    <div class="container" id="container">
+            <div class = "title">Registration<hr></div>
+        <form action="index2.html" method="get" class="form" id="form">
+            <label for="yname">Enter your name: </label>
+            <input type="text" name= "yname" id= "yname" placeholder="Put your name here!" required> <br>
+            <label for="fname">Enter your friend's name: </label>
+            <input type="text" name="fname" id= "fname" placeholder="Put your friend's name here!" required> 
+            <div class="droplist">
+                <label for="date">Enter your friend's birthday: </label>
+                <select name="month" id="month"  required></select>
+                <select name="day" id="day"required></select>
+            </div> 
+            <label for="message">Enter your message: </label>
+            <input type="text" name= "message" id= "message" placeholder="Write your wish!" required> <br>
+            <br><hr>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
