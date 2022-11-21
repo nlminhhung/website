@@ -65,7 +65,7 @@ document.getElementById("form").addEventListener("submit", function(e){
     const day = daySelect.value;
     const month = monthSelect.value;
     const myMessage = message.value;
-
+    
     localStorage.setItem('your-name', yourNameVal);
     localStorage.setItem('friend-name', friendNameVal);  
     localStorage.setItem('day', day);
@@ -73,3 +73,5 @@ document.getElementById("form").addEventListener("submit", function(e){
     localStorage.setItem('message', myMessage);  
     window.location.href = "index2.html"; 
 })
+
+

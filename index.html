@@ -13,13 +13,17 @@
 <body>
     <div class="header">
         <div class="text">
-            <h1 style="text-align: center">About me</h1>
-        <p style="line-height:2em; font-size: 25px;">My name is <b>Minh Hung.</b> I was born in HCMC.<br>
-        I am a Sophomore at <b>Open University.</b> I want to have good marks this year. <br>
-        My website helps people to have a <b>memorable birthday party</b>.
-        </p>
+            <div class="top">
+                <h1 id="wsname">Birthday Greeting Card Maker</h1>
+                <p style="font-size: 23px; text-align: center;"><q>This website helps people to have a memorable birthday</q></p>
+            </div>
+            <div class="objective">
+                <p>
+                <b>Website Objectives:</b><br>
+                Save your time on making a birthday greeting card <br>
+                </p>
+            </div>       
         </div>
-        
         <div id="cake">
             <div id="layer1"></div>
             <div id="layer2"></div>
@@ -30,29 +34,45 @@
             <div id="candle3"></div>
             <div id="candle4"></div>
         </div>
-
     </div>
     <div class="main">
-    <div class="container" id="container">
+        <div class="pictures">
+            <h1>Pictures</h1>
+            <img src="images/bdkid.avif" alt="birthday kid" id="picture1">
+            <img src="images/bdkid2.jpg" alt="birthday kid" id="picture2">
+        </div>
+        <div class="container" id="container">
             <div class = "title">Registration<hr></div>
         <form action="index2.html" method="get" class="form" id="form">
-            <label for="yname">Enter your name: </label>
-            <input type="text" name= "yname" id= "yname" placeholder="Put your name here!" required> <br>
-            <label for="fname">Enter your friend's name: </label>
-            <input type="text" name="fname" id= "fname" placeholder="Put your friend's name here!" required> 
-            <div class="droplist">
+            <div class="grp">
+                <label for="yname">Enter your name: </label>
+                <input type="text" name= "yname" id= "yname" placeholder="Put your name here!" required> <br>
+                <label for="fname">Enter your friend's name: </label>
+                <input type="text" name="fname" id= "fname" placeholder="Put your friend's name here!" required> 
+                <div class="droplist">
                 <label for="date">Enter your friend's birthday: </label>
                 <select name="month" id="month"  required></select>
                 <select name="day" id="day"required></select>
-            </div> 
-            <label for="message">Enter your message: </label>
-            <input type="text" name= "message" id= "message" placeholder="Write your wish!" required> <br>
-            <br><hr>
+                </div> 
+                <label for="message">Enter your message: </label>
+                <input type="text" name= "message" id= "message" placeholder="Empty to get a default wish"> <br>
+                <br><hr>
+            </div>
             <input type="submit" id="submit">
         </form>
+        </div>
+        <div class="aboutMe">
+            <h1>About me</h1>
+            <p>
+                My name is <b>Minh Hung</b>.<br>
+                I am a sophomore at <b>Open University.</b><br>
+                I spent <b>40+ hours</b> making this website.<br>
+            </p>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook" id="facebook">
+            </a>
+        </div>
     </div>
-</div>
-
 <script src="script.js"></script>
 </body>
 </html>

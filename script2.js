@@ -9,15 +9,20 @@ const btn = document.getElementById("printButton");
 
 function From(yourName, friendName, message, day, month)
 {
+  if (message == '')
+  {
+      var defaultText = "A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always.";
+      message = defaultText;
+  }
     const a = document.createElement("p");
     const b = document.createElement("p");
     const c = document.createElement("p");
     const d = document.createElement("p");
     a.innerHTML = "From: " + yourName;
     b.innerHTML = "To: " + friendName;
-    c.innerHTML = '"' + message + '"';
-    d.innerHTML = "Date: " + month + " " + 
-    day;
+    c.innerHTML = '<q>' + message + '</q>';
+    c.style.lineHeight = "2em";
+    d.innerHTML = "Date: " + month + " " + day;
     document.getElementById("container").appendChild(d);
     document.getElementById("container").appendChild(a);
     document.getElementById("container").appendChild(b);
@@ -34,7 +39,9 @@ function Print()
   html2pdf().from(element).save('cmsn.pdf');
 }
 
-window.onload = function() {
-  var backgroundAudio=document.getElementById("bgAudio");
-  backgroundAudio.volume=0.1;
+function copyText()
+{
+  var link = document.getElementById("copyButton");
+  navigator.clipboard.writeText(link);
+  window.alert("Copied!");
 }

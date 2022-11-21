@@ -4,11 +4,14 @@
 }
 @font-face {
     font-family: playfair-display, serif;
-    font-weight: 7000;
-    font-style: normal;
+}
+h1{
+    font-family: playfair-display;
+    font-size: 40px;
 }
 .header{
     position: relative;
+    height: 320px;
     font-family: playfair-display;
     padding-left: 2%;
     padding-bottom: 2%;
@@ -17,27 +20,50 @@
     font-size: 20px;  
     background-color: rgb(238, 228, 138);
     border: 10px solid black;
-    border-radius: 50px;
+    border-radius: 25px;
 }
-.header #text{
+.header .top{
     position: absolute;
+    margin-top: 6%;
+    left: 30%;
+    font-size: 60px;
 }
-
+.header .text{
+    position: relative;
+}
+.header #wsname{
+    text-align: center; 
+    color: red;
+    background: -webkit-linear-gradient(#d80808, #02384e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .objective{
+    position: absolute;
+    top: 0%;
+    width: 200px;
+    color: black;
+    line-height: 1.5em; 
+    font-size: 25px;
+    border: black dotted 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #666;
+}
 hr{
-    border: 1px solid rgb(55, 153, 214);
+    border: 1px dashed rgb(55, 153, 214);
 }
 
 body{
-    padding: 30px;
+    padding-top: 1%;
     margin: auto;
     background-image: url(images/background.jfif);
     height: 800px;
 }
 .main{
-    margin: 100px;
-    margin-top: 25px;
-    align-items: center;
+    margin-top: 10px;
     display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -47,21 +73,61 @@ body{
     color: red;
     font-family: Montserrat; 
     background-image: linear-gradient(ff6cab, 7366ff);
-    padding-bottom: 20px;
 }
-
+.pictures{
+    font-family: Montserrat; 
+    color: floralwhite;
+    background-color: #3e8e41;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;
+}
+.pictures #picture1{
+   height: 150px;
+   width: 250px;
+   border: solid black 4px;
+}
+.pictures #picture2{
+    margin-top: 5%;
+    height: 150px;
+    width: 250px;
+    border: solid black 4px;
+ }
+.aboutMe{
+    position: relative;
+    background-color: #657a1f;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;  
+}
+.aboutMe h1{
+    font-family: Montserrat; 
+    color: floralwhite;
+}
+.aboutMe p{
+    font-family: Montserrat; 
+    position: absolute;
+    top: 20%;
+    color: rgb(223, 237, 226);
+    line-height: 2em; 
+    font-size: 25px;
+}
 .container{
-    padding: auto;
-    margin: auto;
-    padding: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 40px;
+    padding-top: 10px;
     padding-bottom: 20px;
-    font-size: 25px;  
     background-color: wheat;
     border: 10px solid black;
-    border-radius: 50px;
+    border-radius: 20px;
+}
+.container label{
+    font-size: 30px;
     line-height:2em;
 }
-
 #message{
     position: relative;
     width: fit-content;  
@@ -75,4 +141,13 @@ body{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
+.grp{
+    text-align: left;    
+}
+#facebook{
+    position: absolute;
+    border-radius: 30px;
+    right: 40%;
+    bottom: 5%;
+    height: 80px;
+}
