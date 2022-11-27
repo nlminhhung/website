@@ -6,7 +6,9 @@
     font-family: handlee;
     src: url(fonts/Handlee/Handlee-Regular.ttf);
 }
-
+body {
+    height: 1000px;
+}
 .header{
     font-family: roboto;
     font-size: 50px;
@@ -19,9 +21,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.header .top{
+    
+}
 body{
     background-image: url(images/cake.webp);
-    height: 800px;
+    height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;  

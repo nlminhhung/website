@@ -9,47 +9,45 @@ h1{
     font-family: playfair-display;
     font-size: 40px;
 }
+
 .header{
     position: relative;
-    height: 320px;
-    font-family: playfair-display;
-    padding-left: 2%;
-    padding-bottom: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 20px;  
-    background-color: rgb(238, 228, 138);
-    border: 10px solid black;
-    border-radius: 25px;
-}
-.header .top{
-    position: absolute;
-    margin-top: 6%;
-    left: 30%;
-    font-size: 60px;
-}
-.header .text{
-    position: relative;
-}
-.header #wsname{
-    text-align: center; 
-    color: red;
-    background: -webkit-linear-gradient(#d80808, #02384e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .header .objective{
-    position: absolute;
-    top: 0%;
-    width: 200px;
-    color: black;
-    line-height: 1.5em; 
-    font-size: 25px;
-    border: black dotted 5px;
-    margin: 20px;
-    padding: 10px;
-    background-color: #666;
+    font-family: Montserrat; 
+    color: floralwhite;
+    background-color: #3e8e41;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;
+    margin-left: 5%;
+    
 }
+.header .tit{
+    position: relative;
+    background-color: wheat;
+    width: 650px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;  
+    margin: 0% 5% 0% 5%;
+}
+.header .wsname{
+    position: relative;
+    background-color: #657a1f;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;  
+    margin-right: 5%;
+}
+
 hr{
     border: 1px dashed rgb(55, 153, 214);
 }
@@ -124,6 +122,10 @@ body{
     border: 10px solid black;
     border-radius: 20px;
 }
+.container input{
+    font-size: 25px;
+}
+
 .container label{
     font-size: 30px;
     line-height:2em;

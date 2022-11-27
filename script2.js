@@ -35,13 +35,11 @@ From(yourName, friendName, message, day, month);
 function Print()
 {
   document.getElementById("footer").style.opacity = "0";
-  var element = document.getElementById("body");
-  html2pdf().from(element).save('cmsn.pdf');
+  var element = document.getElementById('body');
+  html2pdf(element);
 }
 
 function copyText()
 {
-  var link = document.getElementById("copyButton");
-  navigator.clipboard.writeText(link);
-  window.alert("Copied!");
+  navigator.clipboard.writeText('https://nlminhhung.github.io/website/');
 }

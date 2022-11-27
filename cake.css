@@ -1,12 +1,12 @@
 .header #cake{
     position: absolute;
-    top: 30%;
-    right: 5%;
     height: 200px;
     width: 200px;
     background-color: burlywood;
     border: solid black 5px;
     border-radius: 10%;
+    margin: auto;
+    bottom: 10%;
 }
 .header #layer1{
     position: absolute;
